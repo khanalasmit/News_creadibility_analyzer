@@ -45,9 +45,8 @@ class UserInput(BaseModel):
  
 @app.post('/predict')
 def predict_premium(data:UserInput):
-    input_df=pd.DataFrame([{
-            'text':data.new_string
-    }])
-    prediction=int(model.predict(input_df)[0])
+    # Convert to Series (not DataFrame) - model was trained on Series
+    input_series = pd.Series([data.new_string])
+    prediction = int(model.predict(input_series)[0])
     return JSONResponse(status_code=200,content={'message':prediction})
     
