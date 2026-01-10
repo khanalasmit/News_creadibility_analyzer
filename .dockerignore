@@ -1,0 +1,54 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebooks
+notebook/
+*.ipynb
+.ipynb_checkpoints/
+
+# Data files (already processed into model)
+data/
+
+# Images/Visualizations
+images/
+
+# Environment
+.env
+.env.local
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Documentation
+README.md
+*.md
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# OS
+Thumbs.db
+
+# Logs
+*.log
